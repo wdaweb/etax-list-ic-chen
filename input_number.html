@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel=stylesheet type="text/css" href="./css/main.css">
+</head>
+<style>
+    table tr td:nth-child(1) {
+        width: 18%;
+    }
+
+    table tr td:nth-child(4) {
+        width: 18%;
+    }
+
+    #extra1, #extra2, #extra3 {
+        width: 20%;
+    }
+</style>
+<body>
+<form action="input_number.php" method="post">
+    <table>
+        <tr>
+            <td>(西)年：</td>
+            <td colspan="2"><input type="number" name="year" id="year"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>月期：</td>
+            <td colspan="2">
+                    <select name="month" id="month">
+                            <option value="1,2">1~2月</option>
+                            <option value="3,4">3~4月</option>
+                            <option value="5,6">5~6月</option>
+                            <option value="7,8">7~8月</option>
+                            <option value="9,10">9~10月</option>
+                            <option value="11,12">11~12月</option>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>特別獎：</td>
+            <td colspan="2"><input type="number" name="special" id="special"></td>
+            <td>1000萬</td>
+        </tr>
+        <tr>
+            <td>特獎：</td>
+            <td colspan="2"><input type="number" name="grand" id="grand"></td>
+            <td>200萬</td>
+        </tr>
+        <tr>
+            <td>頭獎：</td>
+            <td colspan="2">
+                <input type="number" name="first1" id="first1">
+                <input type="number" name="first2" id="first2">
+                <input type="number" name="first3" id="first3">
+            <td>20萬</td>
+        </tr>
+        <tr>
+            <td>二獎：</td>
+            <td colspan="2">末7位數號碼與頭獎末7位數相同</td>
+            <td>4萬元</td>
+        </tr>
+        <tr>
+            <td>三獎：</td>
+            <td colspan="2">末6位數號碼與頭獎末6位數相同</td>
+            <td>1萬元</td>
+        </tr>
+        <tr>
+            <td>四獎：</td>
+            <td colspan="2">末5位數號碼與頭獎末5位數相同</td>
+            <td>4千元</td>
+        </tr>
+        <tr>
+            <td>五獎：</td>
+            <td colspan="2">末4位數號碼與頭獎末4位數相同</td>
+            <td>1千元</td>
+        </tr>
+        <tr>
+            <td>六獎：</td>
+            <td colspan="2">末3位數號碼與頭獎末3位數相同</td>
+            <td>2百元</td>
+        </tr>
+        <tr>
+            <td>增開：</td>
+            <td colspan="2">
+                <input type="number" name="extra1" id="extra1">、
+                <input type="number" name="extra2" id="extra2">、
+                <input type="number" name="extra3" id="extra3">
+            </td>
+            <td>2百元</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="submit" id="submit" value="送出"></td>
+            <td><input type="reset" name="reset" id="reset" value="清除"></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

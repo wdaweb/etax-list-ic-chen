@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel=stylesheet type="text/css" href="./css/main.css">
+</head>
+<style>
+    table tr {
+        height: 20%;
+    }
+
+    table tr td:nth-child(1) {
+        width: 30%;
+    }
+
+    #en {
+    width: 17%;
+    }
+
+    </style>
+<body>
+<form action="input_receipt.php" method="post">
+    <table>
+        <tr>
+            <td>(西)年：</td>
+            <td colspan="2"><input type="number" name="year" id="year"></td>
+        </tr>
+        <tr>
+            <td>月期：</td>
+            <td colspan="2">
+                <select name="month" id="month">
+                    <option value="1,2">1~2月</option>
+                    <option value="3,4">3~4月</option>
+                    <option value="5,6">5~6月</option>
+                    <option value="7,8">7~8月</option>
+                    <option value="9,10">9~10月</option>
+                    <option value="10,1">11~12月</option>
+            </td>
+        </tr>
+        <tr>
+            <td>發票號碼：</td>
+            <td colspan="2">
+                <input type="text" name="en" id="en">
+                -
+                <input type="number" name="num" id="num">
+            </td>
+        </tr>
+        <tr>
+            <td>發票金額：</td>
+            <td colspan="2"><input type="number" name="amount" id="amount"></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="submit" name="submit" id="submit" value="送出">
+            </td>
+            <td>
+                <input type="reset" name="reset" id="reset" value="清除">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
